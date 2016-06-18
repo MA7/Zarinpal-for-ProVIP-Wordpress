@@ -112,7 +112,7 @@ if (!function_exists('init_Zarinpal_gateway_pv_class')) {
                             $amount /= 10;
                         }
 
-                        if ($getStatus == 'ok') {
+                        if ($getStatus == 'OK') {
                             $client = new SoapClient('https://www.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
                             $result = $client->PaymentVerification([
                                 'MerchantID' => $MerchantID,
